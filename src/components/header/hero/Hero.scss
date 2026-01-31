@@ -1,0 +1,40 @@
+$main-color: #27AE60;
+
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        padding-top: 100px;
+        background-image: url(/public/images/header/Rectangle\ 5.png);
+        background-size: cover;
+
+        .hero-main{
+            width: 50%;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            padding: 100px;
+            color: white;
+            background-image: url(/public/images/header/Ellipse\ 5.svg);
+            background-size: cover;
+
+            h1{
+                font-size: 48px;
+            }
+
+            p{
+                font-size: 16px;
+            }
+            .button-zone{
+                input{
+                    padding: 14px 24px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+        }
+    }

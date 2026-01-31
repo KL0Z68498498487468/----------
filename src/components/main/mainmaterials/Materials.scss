@@ -1,0 +1,67 @@
+.mainMaterials{
+    width: 100%;
+    height: 660px;
+    padding-top: 50px;
+
+    .header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        
+        padding: 0px 70px;
+    }
+    .main{
+        width: 100%;
+        height: 529px;
+        display: flex;
+        padding: 0px 70px;
+        gap: 24px;
+
+        .card-1{
+        width: 320px;
+        height: 500px;
+        display: flex;
+        align-items: end;
+        padding: 34px;
+        border-radius: 12px;
+        background-image: url(/public/images/main/a85508532e07c0fb3bb1f24ac86b32a21703e98a.jpg);
+        background-size: cover;
+        color: white ;
+        transition: 0.6s ease;
+        position: relative;
+        }
+        .card-1:hover{
+            transition: 0.6s ease;
+        transform: translateY(-30px);
+        }
+        .card-1::before{
+            content: "";
+            left: 0;
+            top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        
+        opacity: 0;
+        transition: 0.6s ease;
+        }
+        .card-1:hover::before{
+        opacity: 1;transition: 0.6s ease;
+        }
+
+        .card-2{
+            @extend .card-1;
+            background-image: url(/public/images/main/pebbles-arragement-top-view_23-2148978439.png)
+        }
+        .card-3{
+            @extend .card-1;
+            background-image: url(/public/images/main/8f93df63ead58fdbfbd47a23b71655bb14217135.jpg)
+        }
+        .card-4{
+            @extend .card-1;
+            background-image: url(/public/images/main/6a9dc84883fbffbcd7e894983696c367da5b9416.jpg);
+            background-position: center;
+        }
+    }
+}
