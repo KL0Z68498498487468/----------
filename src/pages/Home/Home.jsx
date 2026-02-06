@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../components/header/Navbar/Navbar'
 import Hero from '../../components/header/hero/Hero'
 import { IconContext } from 'react-icons'
 import Chose from '../../components/main/whychose/Chose'
@@ -12,7 +11,6 @@ import Footer from '../../components/footer/Footer'
 function Home() {
   return (
     <div>
-      <Navbar/>
       <Hero/>
       <IconContext.Provider value={{size: "20px"}}>
         <Chose/>
